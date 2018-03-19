@@ -1,0 +1,21 @@
+
+<style>
+#box{
+height:100px;
+width:5px;
+background-color:red;
+}
+</style>
+
+<div id="box">
+</div>
+<p>width:<input type="number" onchange="box.style.width=this.value+'px'"></p>
+
+
+<script>
+box.style.transition="width 1s ease 0s";
+box.addEventListener("transitionend",
+  function(){
+  box.style.width='5px';
+});
+</script>
