@@ -1,0 +1,102 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title>
+		JACKPOT!
+	</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+	<style type="text/css">
+		body{
+			background:url('casino3.png') no-repeat;
+		    background-size: 1280px 780px ;                 /*to adjust the whole image as background*/
+		    
+		}
+	#box1{
+		float:left;
+		width:120px;
+		height:130px;
+		background-color:#FFF4D3   ;
+		font-size:150px;
+		margin:245px 0px 0px 380px;
+		text-align: center;
+		padding:0px 0px 20px 0px;
+		color:#900000  ;
+		border:10px solid #900000;
+		
+	}
+	#box2{
+		float:left;
+		width:120px;
+		height:130px;
+		background-color:#FFF4D3   ;
+		font-size:150px;
+		color:#900000  ;
+		text-align: center;
+	    margin:245px 0px 0px 15px;
+		padding:0px 0px 20px 0px;
+		border:10px solid #900000;
+	}
+	#box3{
+		float:left;
+		width:120px;
+		height:130px;
+		background-color:#FFF4D3    ;
+		font-size:150px;
+		color:#900000  ;
+		text-align: center;
+		 margin:245px 0px 0px 15px;
+		padding:0px 0px 20px 0px;
+		border:10px solid #900000;
+		
+	}
+	#spin{
+		position:absolute;
+		margin:510px 0px 0px 560px;
+	}
+	.btn{
+		background-color: #FFF4D3 ;
+		    border: none;
+		    color: #900000 ;
+		    padding: 20px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size: 20px;
+		    margin: 0px 0px;
+			border-radius:60%;
+			border:5px solid #900000;
+	}
+	#logo{
+		height:100px;
+		position:absolute;
+		margin:70px 0px 0px 450px;
+		
+	}
+	</style>
+	
+	
+</head>
+<body>
+<img id="logo"src="jackpot_logo.png">
+	<div id='box1'></div>
+	<div id='box2'></div>
+	<div id='box3'></div>
+
+<div id="spin"><button class="btn" onclick="myFunction()"><strong>SPIN</strong></button></div>
+	<script>
+		var ar=["1","2","3","4","5","6","7","8","9"];                         /**Because when the script executes the browser has not yet parsed the <body>, 
+		                                                         so it does not know that there is an element with the specified id.**/
+		var len=ar.length;
+		var r1=Math.floor(Math.random()*len);
+		var r2=Math.floor(Math.random()*len);
+		var r3=Math.floor(Math.random()*len);
+		
+		document.getElementById('box1').innerHTML=ar[r1];
+		document.getElementById('box2').innerHTML=ar[r2];
+		document.getElementById('box3').innerHTML=ar[r3];
+		function myFunction() {
+		    location.reload();
+		}
+	</script>
+</body>
+</html>
