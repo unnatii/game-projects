@@ -94,6 +94,10 @@
 		document.getElementById('box1').innerHTML=ar[r1];
 		document.getElementById('box2').innerHTML=ar[r2];
 		document.getElementById('box3').innerHTML=ar[r3];
+		
+		if(r1==r2 && r2==r3){
+			window.confirm("you win the JACKPOT!!");
+		}
 		function myFunction() {
 		    location.reload();
 		}
