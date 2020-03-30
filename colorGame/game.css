@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+	background: black;
+}
+
+.block{
+	background-color: rgb(255, 255, 0);
+	float: left;
+	width: 8%;
+	padding:10%;
+	margin: 1%;
+	border-radius: 15%;
+}
+
+#container{
+	max-width: 600px;
+	margin: 5% auto;
+}
+
+#heading{
+	margin: 0;
+	padding: 20px;
+	color: white;
+	text-transform: uppercase;
+}
+
+#bar{
+	background: white;
+	color: black;
+	height: 20px;
+	text-align: center;
+}
+
+#message{
+	display: inline-block;
+	width: 15%;
+}
+
+.selected{
+	background-color: green;
+}
+
+button{
+
+	margin: 0;
+	height: 100%;
+}
